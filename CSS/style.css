@@ -28,6 +28,9 @@ color: #000000;
   max-height: 65px;
   padding-top: 49px;
 }
+.main-header-catalog{
+  max-height: none;
+}
 .main-navigator{
   min-width: 440px;
   margin-left: 200px;
@@ -75,6 +78,14 @@ color: #000000;
   background: transparent url("../img/sprite.png") no-repeat;
   background-position: -20px -20px;
   opacity: 0.3;
+}
+.catalog-title{
+  margin: 0 auto;
+}
+.catalog-title h1{
+  font-size: 55px;
+  line-height: 55px;
+  margin-bottom: 94px;
 }
 .slider{
   position: relative;
@@ -371,21 +382,76 @@ sup{
 .catalog-form{
   width: 260px;
 }
+.catalog-form fieldset{
+  border: none;
+  margin: 0px;
+  padding: 0px;
+}
+.catalog-form ul{
+  padding: 0px;
+  margin: 0px;
+}
+.catalog-form fieldset li{
+  list-style: none;
+}
 .catalog-filter{
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 51px;
 }
 .catalog-filter span{
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 600;
+  margin-right: 255px;
 }
-.catalog-filter a{
+.catalog-filter-list a{
   text-transform: uppercase;
   text-decoration: none;
   font-size: 14px;
   line-height: 18px;
   color: inherit;
+  margin-right: 27px;
+  opacity: 0.3;
+}
+.catalog-filter-list a:hover{
+  opacity: 0.6;
+}
+.catalog-filter-list a:active{
+  opacity: 1;
+}
+.catalog-filter-arrow{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 38px;
+}
+.arrow-down,
+.arrow-up{
+  font-size: 0px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  opacity: 0.2;
+}
+.arrow-down{
+  border-bottom: 10px solid #000000;
+}
+.arrow-up{
+  border-top: 10px solid #000000;
+}
+.arrow-down:hover,
+.arrow-up:hover{
+  opacity: 0.4;
+}
+.arrow-down:active,
+.arrow-up:active{
+  opacity: 1;
+}
+.catalog-filter .active{
+  opacity: 1;
 }
 .catalog-items{
   display: flex;
