@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Дизайн-студия Nёrd's</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link  rel="stylesheet" href="css/normalize.css">
+  <link  rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- Header -->
+  <header class="main-header">
+    <div class="container main-header-top">
+      <a href="index.html" ><img src="img/nerds-logo.png" alt="Nerd's" width="160" height="65"></a>
+      <nav class="main-navigator">
+        <ul>
+          <li>
+            <a href="#">Студия</a>
+          </li>
+          <li>
+            <a href="#">Клиенты</a>
+          </li>
+          <li>
+            <a href="#">Магазин</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-block">
+        <a class="login" href="#">Корзина</a>
+      </div>
+    </div>
+    <div class="catalog-title container">
+      <h1>Магазин готовых шаблонов</h1>
+    </div>
+  </header>
+<!-- Main -->
+  <main class="container main-items">
+    <form class="catalog-form" action="#" method="get">
+      <div class="filter">
+      </div>
+      <fieldset>
+        <legend>Сетка:</legend>
+        <ul>
+          <li><input type="radio" name="grid" value="Adaptive" id="ad" checked><label for="ad">Адаптивная</label></li>
+          <li><input type="radio" name="grid" value="Fixed" id="fd"><label for="fd">Фиксированная</label></li>
+          <li><input type="radio" name="grid" value="Rubber" id="rb"><label for="rb">Резиновая</label></li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Особенности:</legend>
+        <ul>
+          <li><input type="checkbox" name="features" value="Slider" id="sr" checked><label for="sr">Слайдер</label></li>
+          <li><input type="checkbox" name="features" value="Block" id="bk"><label for="bk">Блок преимуществ</label></li>
+          <li><input type="checkbox" name="features" value="News" id="ns" checked><label for="ns">Новости</label></li>
+          <li><input type="checkbox" name="features" value="Gallery" id="gy"><label for="gy">Галерея</label></li>
+          <li><input type="checkbox" name="features" value="Basket" id="bt"><label for="bt">Корзина</label></li>
+        </ul>
+      </fieldset>
+      <button class="btn" type="submit">Показать</button>
+    </form>
+<!-- catalog-filter -->
+    <div class="catalog">
+      <div class="catalog-filter">
+        <span>Сортировать:</span>
+        <div class="catalog-filter-list">
+          <a href="#">По типу</a>
+          <a href="#">По цене</a>
+          <a href="#">По названию</a>
+        </div>
+        <div class="catalog-filter-arrow">
+          <a class="arrow-down" href="#"></a>
+          <a class="arrow-up" href="#"></a>
+        </div>
+      </div>
+<!-- catalog-item -->
+      <div class="catalog-items">
+        <div class="item">
+          <span></span><span></span><span></span>
+          <a><img src="img/img-sedona.jpg" alt="Sedonia" width="360" height="576"></a>
+          <div class="action">
+            <a href="#"><h2>Sedonia</h2></a>
+            <p>Информационный сайт для туристов</p>
+            <a href="#" class="btn-buy">9900 руб.</a>
+          </div>
+        </div>
+        <div class="item">
+          <span></span><span></span><span></span>
+          <a><img src="img/img-pink.jpg"" alt="Pink" width="360" height="576"></a>
+          <div class="action">
+            <a href="#"><h2>Pink APP</h2></a>
+            <p>Продуктовый лендинг приложения для iOS и Android</p>
+            <a href="#" class="btn-buy">9900 руб.</a>
+          </div>
+        </div>
+        <div class="item">
+          <span></span><span></span><span></span>
+          <a><img src="img/img-barbershop.jpg"" alt="Barbershop" width="360" height="576"></a>
+          <div class="action">
+            <a href="#"><h2>Шаблон "Barbershop"</h2></a>
+            <p>Сайт салоны красоты. Для мужчин, да.</p>
+            <a href="#" class="btn-buy">9900 руб.</a>
+          </div>
+        </div>
+        <div class="item">
+          <span></span><span></span><span></span>
+          <a><img src="img/img-mishka.jpg"" alt="Mishka" width="360" height="576"></a>
+          <div class="action">
+            <a href="#"><h2>Mishka</h2></a>
+            <p>Интернет-магазин вязаных игрушек</p>
+            <a href="#" class="btn-buy">9900 руб.</a>
+          </div>
+        </div>
+        <div class="item">
+          <span></span><span></span><span></span>
+          <a><img src="img/img-aplus.jpg" alt="A Plus" width="360" height="576"></a>
+          <div class="action">
+            <a href="#"><h2>A Plus</h2></a>
+            <p>Лендинг курсов повышения квалификации</p>
+            <a href="#" class="btn-buy">9900 руб.</a>
+          </div>
+        </div>
+        <div class="item">
+          <span></span><span></span><span></span>
+          <a><img src="img/img-kvast.jpg"" alt="Кваст" width="360" height="576"></a>
+          <div class="action">
+            <a href="#"><h2>Кваст</h2></a>
+            <p>Промо-сайт производителя крафтового кваса</p>
+            <a href="#" class="btn-buy">9900 руб.</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="pagination">
+        <a class="current">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#" class="pagination-next">Следующая</a>
+    </div> -->
+  </main>
+<!-- footer -->
+  <footer>
+    <div class="container">
+      <div class="map">
+        <img src="img/map.jpg" alt="Карта" width="400" height="400">
+        <img src="img/map-marker.png" alt="Маркер" width="200" height="200">
+        <div class="map-contacts">
+          <b>nёrds design studio</b>
+          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. <span>+7(812)275-75-75</span></p>
+          <a class="btn btn-contacts" href="#">Напишите нам</a>
+        </div>
+      </div>
+      <div class="social">
+        <div class="social-btns">
+          <ul>
+            <li>
+              <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
+            </li>
+            <li>
+              <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+            </li>
+            <li>
+              <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+            </li>
+          </ul>
+        </div>
+        <div class="social-text">
+          <h3>Давайте дружить, это выгодно!</h3>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
